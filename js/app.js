@@ -1,0 +1,1 @@
+console.log("JC SHAYO Website");
