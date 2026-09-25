@@ -1,79 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JC SHAYO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JC SHAYO | Official Website</title>
 
-  <style>
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#111;
-      color:#fff;
-      text-align:center;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-    header{
-      background:#000;
-      padding:20px;
-      border-bottom:3px solid gold;
-    }
+body{
+background:#111;
+color:white;
+}
 
-    h1{
-      color:gold;
-      margin:0;
-    }
+header{
+background:#000;
+padding:20px;
+border-bottom:3px solid gold;
+position:sticky;
+top:0;
+}
 
-    p{
-      color:#ddd;
-    }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 25px;
-      background:gold;
-      color:#000;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
-    }
+.logo{
+font-size:30px;
+font-weight:bold;
+color:gold;
+}
 
-    section{
-      padding:40px 20px;
-    }
+nav ul{
+display:flex;
+list-style:none;
+}
 
-    footer{
-      background:#000;
-      padding:15px;
-      color:#aaa;
-      margin-top:40px;
-    }
-  </style>
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+color:gold;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:70px 20px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+color:gold;
+margin-bottom:20px;
+font-size:38px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:40px;
+align-items:center;
+}
+
+.profile{
+width:250px;
+height:250px;
+background:#222;
+border:4px solid gold;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
+margin:auto;
+}
+
+.about p{
+line-height:1.8;
+font-size:18px;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+margin-top:50px;
+color:#aaa;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>JC SHAYO</h1>
-  <p>Faith • Inspiration • Technology</p>
+
+<nav>
+
+<div class="logo">JC SHAYO</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
 </header>
 
-<section>
-  <h2>Welcome to JC SHAYO</h2>
+<section class="hero">
 
-  <p>
-    Official website of JC SHAYO.
-    Sharing faith, inspiration, technology projects,
-    blogs and digital content.
-  </p>
+<h1>Welcome to JC SHAYO</h1>
 
-  <a class="btn" href="#">Explore</a>
+<p>
+Digital Architect • Content Creator • Technology Enthusiast • Catholic Faith • Inspiration
+</p>
+
+<a href="#about" class="btn">About Me</a>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<div class="profile">
+👤
+</div>
+
+<div>
+
+<p>
+
+My name is <b>Jovan Evarist Shayo (JC SHAYO)</b>.
+
+I am a Digital Architect, Web Developer, Content Creator and Technology Enthusiast from Tanzania.
+
+I create websites, mobile applications, digital content, technology solutions and inspiring Christian content.
+
+My mission is to use technology to educate, inspire and transform lives.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
-  © 2026 JC SHAYO. All Rights Reserved.
+
+© 2026 JC SHAYO. All Rights Reserved.
+
 </footer>
 
 </body>
